@@ -1,0 +1,68 @@
+/* 網頁主體樣式 */
+body {
+  background-color: #2b2b2b; /* 深灰色背景 */
+  color: white; /* 白色文字 */
+  font-family: Arial, sans-serif; /* 設置常見字體 */
+  margin: 0; /* 去掉默認外邊距 */
+  padding: 0; /* 去掉默認內邊距 */
+  line-height: 1.6; /* 提高文字的易讀性 */
+}
+
+/* 主標題樣式 */
+h1 {
+  color: white; /* 主標題文字顏色為白色 */
+  text-align: center; /* 文字置中 */
+  margin-top: 20px; /* 上邊距 */
+}
+
+/* 文字區域樣式 */
+article {
+  max-width: 800px; /* 設置文字最大寬度，防止行太長 */
+  margin: 20px auto; /* 居中內容 */
+  padding: 20px; /* 內邊距 */
+  background-color: #383838; /* 深灰色區塊背景，略淺於主體背景 */
+  border-radius: 8px; /* 添加圓角效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加輕微陰影 */
+}
+
+/* 超連結樣式 */
+a {
+  color: #1e90ff; /* 設置超連結為淺藍色 */
+  text-decoration: none; /* 去掉超連結下劃線 */
+}
+
+a:hover {
+  text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
+}
+
+/* 關鍵字的超連結樣式 */
+.keyword-link {
+  position: relative; /* 讓 tooltip 可以相對於這個元素定位 */
+  text-decoration: none; /* 去掉超連結的底線 */
+  color: #1e90ff; /* 繼承主體的超連結顏色 */
+}
+
+/* 跳窗提示的樣式 */
+.tooltip {
+  position: absolute; /* 絕對定位 */
+  top: 120%; /* 將 tooltip 放在關鍵字的下方，並保持一定間距 */
+  left: 0; /* 將 tooltip 對齊關鍵字的左側 */
+  background-color: #383838; /* 深灰色背景 */
+  color: white; /* 白色字體 */
+  padding: 8px 10px; /* 調整內邊距 */
+  border: 1px solid #4f4f4f; /* 添加邊框，稍淺於背景色 */
+  border-radius: 4px; /* 添加圓角邊框 */
+  visibility: hidden; /* 預設隱藏 */
+  opacity: 0; /* 預設透明 */
+  transition: opacity 0.2s ease; /* 增加淡入淡出過渡效果 */
+  white-space: nowrap; /* 防止文字換行 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
+  z-index: 9999; /* 設置更高的層級，確保 tooltip 在關鍵字上方 */
+}
+
+/* 當滑鼠懸停在關鍵字上時顯示 tooltip */
+.keyword-link:hover .tooltip {
+  visibility: visible; /* 顯示 tooltip */
+  opacity: 1; /* 完全可見 */
+  transition: opacity 0.2s ease; /* 顯示時的過渡效果 */
+}

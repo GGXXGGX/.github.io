@@ -1,0 +1,22 @@
+{
+  "HTML": {
+    "link": "https://developer.mozilla.org/zh-TW/docs/Web/HTML",
+    "color": "blue",
+    "description": "HTML 是用來構建網頁結構的標記語言"
+  },
+  "CSS": {
+    "link": "https://developer.mozilla.org/zh-TW/docs/Web/CSS",
+    "color": "green",
+    "description": "CSS 用於設計網頁的外觀和樣式"
+  },
+  "JavaScript": {
+    "link": "https://developer.mozilla.org/zh-TW/docs/Web/JavaScript",
+    "color": "orange",
+    "description": "JavaScript 是一種編程語言，用於增強網頁的互動性"
+  },
+  "Python": {
+    "link": "https://www.python.org/",
+    "color": "red",
+    "description": "Python 是一種高級編程語言，廣泛應用於後端開發和數據處理"
+  }
+}
